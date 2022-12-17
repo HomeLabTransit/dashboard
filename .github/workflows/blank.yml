@@ -1,0 +1,263 @@
+ appConfig:
+  theme: material-dark
+  layout: vertical
+  iconSize: small
+  language: en
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 1
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: google
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: true
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: true
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+pageInfo:
+  title: Transit HQ
+  description: You come, you go!
+  navLinks:
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+      target: newtab
+    - title: Documentation
+      path: https://dashy.to/docs
+      target: newtab
+  footerText: No assholes allowed!
+sections:
+  - name: pfsense
+    icon: si-pfsense
+    items:
+      - title: DDNS
+        description: Dynamic DNS
+        icon: https://img.icons8.com/color/32/dyndns.png
+        url: https://pfsense.homelabtransit.com:358/services_dyndns.php
+        target: newtab
+        id: 0_756_ddns
+      - title: DNS Server
+        description: DNS Itself!
+        icon: https://img.icons8.com/stickers/32/dns.png
+        url: https://pfsense.homelabtransit.com:358/system.php
+        target: newtab
+        id: 1_756_dnsserver
+      - title: SSL Certs
+        description: Secure The Hub!
+        icon: >-
+          https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/32/external-ssl-certificate-internet-security-vitaliy-gorbachev-lineal-color-vitaly-gorbachev.png
+        url: https://pfsense.homelabtransit.com:358/system_certmanager.php
+        target: newtab
+        id: 2_756_sslcerts
+      - title: Firewall
+        description: Update Settings
+        icon: https://img.icons8.com/color/32/firewall.png
+        url: https://pfsense.homelabtransit.com:358/firewall_rules.php
+        target: newtab
+        id: 3_756_firewall
+      - title: DHCP Leases
+        description: IP Setup
+        icon: >-
+          https://img.icons8.com/external-flat-wichaiwi/32/external-address-general-data-protection-regulation-gdpr-flat-wichaiwi.png
+        url: https://pfsense.homelabtransit.com:358/status_dhcp_leases.php
+        target: newtab
+        id: 4_756_dhcpleases
+      - title: DDNS
+        description: Dynamic DNS
+        icon: https://img.icons8.com/color/32/dyndns.png
+        url: https://pfsense.homelabtransit.com:358/services_dyndns.php
+        target: newtab
+        id: 5_756_ddns
+      - title: Backup Files
+        description: pfsense backup info
+        icon: >-
+          https://img.icons8.com/external-flaticons-lineal-color-flat-icons/32/external-backup-computer-programming-icons-flaticons-lineal-color-flat-icons.png
+        url: https://pfsense.homelabtransit.com:358/diag_backup.php
+        target: newtab
+        id: 6_756_backupfiles
+      - title: Restart
+        description: Router Reboot
+        icon: https://img.icons8.com/clouds/32/restart.png
+        url: https://pfsense.homelabtransit.com:358/diag_reboot.php
+        target: newtab
+        id: 7_756_restart
+      - title: Port Forward
+        description: Approve/Deny Access
+        icon: https://img.icons8.com/clouds/32/ethernet-on.png
+        url: https://pfsense.homelabtransit.com:358/firewall_nat.php
+        target: newtab
+        id: 8_756_portforward
+      - title: DNS Resolver
+        description: Website Go That Way ->
+        icon: https://img.icons8.com/clouds/32/domain.png
+        url: https://pfsense.homelabtransit.com:358/services_unbound.php
+        target: newtab
+        id: 9_756_dnsresolver
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+  - name: Home Lab Junction
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Cisco Switch
+        description: Managed Switch
+        icon: >-
+          https://zeevector.com/wp-content/uploads/Cisco-Logo-Transparent-PNG.png
+        url: https://cisco-sg250-1.homelabtransit.com/
+        target: newtab
+        id: 0_1570_ciscoswitch
+      - title: Backblaze B2
+        description: Cloud Archive
+        icon: favicon
+        url: >-
+          https://secure.backblaze.com/b2_buckets.htm?bznetid=2471437091663365179871
+        target: newtab
+        id: 1_1570_backblazeb
+      - title: Cloudflare
+        description: DNS
+        icon: https://icon.horse/icon/cloudflare.com
+        url: https://dash.cloudflare.com/login?lang=en-US
+        target: newtab
+        id: 2_1570_cloudflare
+      - title: NAS Storage
+        description: Local Archive
+        icon: https://img.icons8.com/color/32/nas.png
+        url: https://nassrv01.homelabtransit.com/
+        target: newtab
+        id: 3_1570_nasstorage
+      - title: Google Drive
+        description: Google Cloud
+        icon: https://img.icons8.com/color/32/google-drive--v2.png
+        url: https://drive.google.com/drive/my-drive
+        target: newtab
+        id: 4_1570_googledrive
+      - title: Gmail
+        description: Email
+        icon: https://img.icons8.com/color/32/gmail-new.png
+        url: https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox
+        target: newtab
+        id: 5_1570_gmail
+    icon: si-openstreetmap
+  - name: Fun + Entertainment
+    displayData:
+      sortBy: most-used
+      rows: 1
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Steam
+        description: PC Games
+        icon: favicon
+        url: https://store.steampowered.com
+        target: newtab
+        id: 0_1778_steam
+      - title: GOG
+        description: PC Games
+        icon: favicon
+        url: https://www.gog.com
+        target: newtab
+        id: 1_1778_gog
+      - title: Plex
+        description: Plex Server
+        icon: https://icon.horse/icon/plex.tv
+        url: https://plex.homelabtransit.com:32400/
+        target: newtab
+        id: 2_1778_plex
+      - title: TA
+        description: TrueAchievements
+        icon: favicon
+        url: https://www.trueachievements.com/gamer/ReliantGung+ho
+        target: newtab
+        id: 3_1778_ta
+      - title: Reddit
+        icon: favicon
+        url: https://www.reddit.com
+        target: newtab
+        id: 4_1778_reddit
+      - title: YouTube
+        description: YouTube
+        icon: favicon
+        url: https://www.youtube.com
+        target: newtab
+        id: 5_1778_youtube
+    icon: si-retropie
+  - name: Dashy Info
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 4
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Dashy Live
+        description: Dashy News
+        icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+        url: https://live.dashy.to/
+        target: newtab
+        id: 0_933_dashylive
+      - title: GitHub
+        description: Source Code, Issues and Pull Requests
+        url: https://github.com/lissy93/dashy
+        icon: favicon
+        id: 1_933_github
+      - title: Docs
+        description: Configuring & Usage Documentation
+        provider: Dashy.to
+        icon: far fa-book
+        url: https://dashy.to/docs
+        id: 2_933_docs
+      - title: Config Guide
+        description: See full list of configuration options
+        url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+        icon: fas fa-wrench
+        id: 3_933_configguide
+      - title: Support
+        description: Get help with Dashy
+        icon: far fa-hands-helping
+        url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+        id: 4_933_support
+      - title: Showcase
+        description: See how others are using Dashy
+        url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+        icon: far fa-grin-hearts
+        id: 5_933_showcase
+  - name: Local Information
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items: []
